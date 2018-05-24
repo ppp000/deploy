@@ -35,7 +35,7 @@
 
 ### 备案
 当你有了实名且已入库的域名 + 正常状态的ecs + 备案服务号即可申请备案了  
-申请备案要很多资料，不同省份不同规则 [详情见这里](https://help.aliyun.com/knowledge_detail/36895.html?spm=5176.8087400.600752.1.58d815c9T0iS4d)   
+申请备案要很多资料，不同省份不同规则 [详情见这里](https://help.aliyun.com/knowledge_detail/36895.html?spm=5176.8087400.600752.1.58d815c9T0iS4d)  
 这是备案成功后的反馈，你们也可以根据它大概知道自己需要准备哪些资料：  
 ![默认图片](https://raw.githubusercontent.com/ppp000/deploy/master/img-storage/1527082424(1).jpg)  
 备案的一个原则是严格按照官方的要求去做，因为一个信息的不合规的后果便是重新申请备案，有一个时间成本在这里  
@@ -43,7 +43,7 @@
 ### 环境搭建
 阿里云创建的默认实例是40GB的固态磁盘，通过公网ip可远程连接到云服务器  
 #### iis
-远程连接过程可设置本地磁盘映射到ecs中，以达到传输文件的目的 [详情见这里](https://jingyan.baidu.com/album/148a192185f0ae4d71c3b138.html?picindex=1)  
+远程连接过程可设置本地磁盘映射到ecs中，以达到传输文件的目的 [详情见这里](https://jingyan.baidu.com/album/148a192185f0ae4d71c3b138.html?picindex=1)  
 连接成功后，开始菜单旁边的服务器管理器，添加角色,具体角色功能如图：  
 
 
