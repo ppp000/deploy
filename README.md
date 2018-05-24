@@ -12,7 +12,7 @@
 
 # 主要步骤
 关键词：angular + nodejs + mysql + ecs + win2012R2_64位 + iis + pm2  
-主要步骤中最耗费时间的是备案，笔者准备备案资料2-3天，备案审核整整一个星期，这个时间仅供参考   
+主要步骤中最耗费时间的是备案，笔者准备备案资料2-3天，备案审核整整一个星期，时间仅供参考  
 这里用的是阿里云全家桶服务  
 * 若是学生身份看这里：200大洋前后，一年的ecs服务器使用期，细节自行了解阿里云云翼计划。  
 * 不是学生身份看这里：注册后阿里云会赠送一个月的ecs服务器，再购买两个月（约120大洋）即可（必须购足三个月，否则无备案服务号，也将无法备案）
@@ -43,10 +43,12 @@
 这是备案成功后的反馈，你们也可以根据它大概知道自己需要准备哪些资料：  
 ![默认图片](https://raw.githubusercontent.com/ppp000/deploy/master/img-storage/1527082424(1).jpg)  
 备案的一个原则是严格按照官方的要求去做，因为一个信息的不合规的后果便是重新申请备案，有一个时间成本在这里  
+
 ---
 
 ### 环境搭建
-阿里云创建的默认实例是40GB的固态磁盘，通过公网ip可远程连接到云服务器  
+阿里云创建的默认实例是40GB的固态磁盘，通过公网ip可远程连接到云服务器
+  
 
 #### `iis`
 远程连接过程可设置本地磁盘映射到ecs中，以达到传输文件的目的 [详情见这里](https://jingyan.baidu.com/album/148a192185f0ae4d71c3b138.html?picindex=1)  
@@ -77,8 +79,8 @@ nodejs + pm2配合使用理论上可以达到ecs在不关机的情况下，node�
 32位安装包下载还是可以安装64位的mysql服务的  
 安装过程同理，和windows没什么很大区别
 
-连接mysql有可能会报：E RROR 1130: Host 'XXXXXX' is not allowed to connect to this MySQL server
-hack：
+连接mysql有可能会报：E RROR 1130: Host 'XXXXXX' is not allowed to connect to this MySQL server  
+hack：  
 * 打开mysql控制台
 * ```mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION```;  
 
@@ -87,4 +89,4 @@ hack：
 
 有时候dist打包好会出现js文件404的情况，两个处理方式：  
 * 正确配置webpack，重新打包  
-* 在build好的index.html：<base href="./">  
+* 在build好的index.html：`<base href="./">`
