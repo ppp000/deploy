@@ -44,7 +44,8 @@
 阿里云创建的默认实例是40GB的固态磁盘，通过公网ip可远程连接到云服务器  
 #### iis
 远程连接过程可设置本地磁盘映射到ecs中，以达到传输文件的目的 [详情见这里](https://jingyan.baidu.com/album/148a192185f0ae4d71c3b138.html?picindex=1)  
-连接成功后，开始菜单旁边的服务器管理器，添加角色
+连接成功后，开始菜单旁边的服务器管理器，添加角色,具体角色功能如图：  
+
 
 #### nodejs
 [node安装包下载地址](https://npm.taobao.org/mirrors/node/v10.1.0/)
