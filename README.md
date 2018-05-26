@@ -84,6 +84,9 @@ hack：
 * 打开mysql控制台
 * ```mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION```;  
 
+# https协议
+  
+
 # 其它坑
 对于前端开发人员来说，iis可能是很陌生的，但这个配置又很重要！  
 
