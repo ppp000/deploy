@@ -32,7 +32,7 @@
 ---
 
 ### ECS
-笔者选择的是最低配置：1g内存 + 1g CPU + 1Mbps带宽    
+笔者选择的是最低配置：1g内存 + 1g CPU + 1Mbps带宽  
 考虑到Linux的学习成本，镜像选择了win2012R2_64位  
 
 ---
@@ -83,6 +83,9 @@ nodejs + pm2配合使用理论上可以达到ecs在不关机的情况下，node�
 hack：  
 * 打开mysql控制台
 * ```mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION```;  
+
+# https协议
+#：http升级为https后无法发送请求
 
 # 其它坑
 对于前端开发人员来说，iis可能是很陌生的，但这个配置又很重要！  
