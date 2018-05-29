@@ -96,3 +96,4 @@ hack：
 有时候dist打包好会出现js文件404的情况，两个处理方式：  
 * 正确配置webpack，重新打包  
 * 在build好的index.html：`<base href="./">`
+
